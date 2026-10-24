@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html>
+<html lang=en>
+<head>
+  <meta charset=UTF-8>
+  <meta name=viewport content=width=device-width, initial-scale=1.0>
+  <title>Privacy Policy — SentryX Security</title>
+  <style>
+    :root {
+      --bg: #0b0f19;
+      --card: #131b2e;
+      --text: #e2e8f0;
+      --muted: #94a3b8;
+      --accent: #38bdf8;
+      --border: #1e293b;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      margin: 0;
+      padding: 40px 20px;
+      display: flex;
+      justify-content: center;
+    }
+    .container {
+      max-width: 760px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 32px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    }
+    h1 {
+      color: #ffffff;
+      margin-top: 0;
+      font-size: 28px;
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 12px;
+    }
+    h2 {
+      color: var(--accent);
+      font-size: 20px;
+      margin-top: 28px;
+    }
+    p, li {
+      color: var(--muted);
+      font-size: 15px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    .badge {
+      display: inline-block;
+      background: rgba(56, 189, 248, 0.15);
+      color: var(--accent);
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+    .footer {
+      margin-top: 36px;
+      font-size: 13px;
+      color: #64748b;
+      border-top: 1px solid var(--border);
+      padding-top: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div class=container>
+    <span class=badge>OFFLINE SECURITY APPLICATION</span>
+    <h1>Privacy Policy for SentryX</h1>
+    <p><strong>Effective Date:</strong> October 24, 2024</p>
+    
+    <p>
+      SentryX (we, our, or the App) is an offline, on-device anti-theft security and motion detection alarm utility. We are firmly committed to user privacy and total data sovereignty.
+    </p>
+
+    <h2>1. Zero Data Collection & Offline Operation</h2>
+    <p>
+      SentryX does not collect, record, transmit, or monetize any personal, financial, biometric, sensor, or usage data. The application operates entirely offline on your device and does not require nor request access to the Internet (<code>android.permission.INTERNET</code> is completely absent from our application).
+    </p>
+
+    <h2>2. Hardware Sensors & Device Usage</h2>
+    <p>
+      When you explicitly arm the device shield, the app monitors device motion and proximity sensors (accelerometer, gyroscope, and proximity sensor) purely in real-time RAM to detect unauthorized physical movement, pocket picking, or lifting. Sensor readings:
+    </p>
+    <ul>
+      <li>Are processed strictly on-device in real-time.</li>
+      <li>Are never recorded, logged to persistent storage, or transmitted off your phone.</li>
+      <li>Cease immediate evaluation the moment the shield is disarmed or authenticated.</li>
+    </ul>
+
+    <h2>3. Biometric & Authentication Data</h2>
+    <p>
+      When disarming the alarm, SentryX uses Android's native <code>BiometricPrompt</code> and Device Credential API (Fingerprint, Face Unlock, or PIN/Pattern). 
+    </p>
+    <ul>
+      <li>Biometric data is handled entirely by the secure Android operating system hardware (TEE / StrongBox).</li>
+      <li>SentryX never has access to, sees, or stores your biometric templates or passwords. It only receives a cryptographic success or failure callback from the OS.</li>
+    </ul>
+
+    <h2>4. Foreground Service & Notifications</h2>
+    <p>
+      SentryX runs a foreground service with a persistent notification (<code>FOREGROUND_SERVICE_SPECIAL_USE</code>) solely to maintain active sensor observation while your phone's screen is turned off or in standby. This service is 100% user-initiated and can be terminated at any moment directly by disarming the shield or tapping the notification.
+    </p>
+
+    <h2>5. Third-Party Libraries and Advertisements</h2>
+    <p>
+      SentryX does not integrate any third-party analytics (e.g. Firebase Analytics, Google Analytics), tracking SDKs, or advertising networks. Your device experience is completely private and unmonitored.
+    </p>
+
+    <h2>6. Contact Us</h2>
+    <p>
+      If you have questions regarding this privacy policy or our security practices, you may reach out directly via our developer contact email provided on the Google Play Store listing.
+    </p>
+
+    <div class=footer>
+      &copy; 2026 SentryX Security. All rights reserved.
+    </div>
+  </div>
+</body>
+</html>
